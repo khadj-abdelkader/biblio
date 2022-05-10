@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head th:replace="composants/header :: head"></head>
+
+<body>
+     <!-- Navbar -->
+     <nav th:replace="composants/header :: navbar"></nav>
+
+    <section id="myAccount" class="py-5">
+        <h2 class="text-center">Mon compte</h2>
+
+        <!-- Menu tab Mon compte -->
+        <ul class="nav nav-tabs my-5" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="newAccount-tab" data-bs-toggle="tab" data-bs-target="#newAccount" role="tab" aria-controls="newAccount" aria-selected="true">Nouveau compte</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" role="tab" aria-controls="login" aria-selected="false">Connexion</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="passwordForgot-tab" data-bs-toggle="tab" data-bs-target="#passwordForgot" role="tab" aria-controls="passwordForgot" aria-selected="false">Mot de passe</button>
+            </li>
+        </ul>
+
+
+        <div class="container tab-content">
+            <!-- Formulaire Nouveau compte -->
+            <div id="newAccount" class="tab-pane fade show active">
+                <h3 class="mb-5">Création de mon compte</h3>
+                <form action="#" method="POST">
+                    <div class="row mx-0 mb-3">
+                        <label for="pseudo" class="col-md-3 col-form-label px-0">Nom d'utilisateur</label>
+                        <div class="col-md-9 px-0">
+                            <input type="text" class="form-control" name="userPseudo" id="pseudo" placeholder="Pseudo" maxlength="30" required />
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-3">
+                        <label for="email" class="col-md-3 col-form-label px-0">Adresse e-mail</label>
+                        <div class="col-md-9 px-0">
+                            <input type="email" class="form-control" name="userEmail" id="email" placeholder="E-mail" required />
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <label for="password" class="col-md-3 col-form-label px-0">Mot de passe</label>
+                        <div class="col-md-9 px-0">
+                            <input type="password" class="form-control" name="userPassword" id="password" placeholder="Mot de passe" required />
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" name="inputNewAccount" class="btn btn-dark" value="Valider" />
+                    </div>
+                </form>
+            </div>
+            <!-- Formulaire Se connecter ---- Login  -->
+            <div id="login" class="tab-pane fade" th:classappend="${classActiveLogin} ? 'in active'">
+                <h3 class="mb-5">Se connecter à mon compte</h3>
+                <form action="#" method="POST">
+                    <div class="row mx-0 mb-3">
+                        <label for="email" class="col-md-3 col-form-label px-0">Adresse e-mail</label>
+                        <div class="col-md-9 px-0">
+                            <input type="email" class="form-control" name="userEmail" id="email" placeholder="E-mail" required />
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-5">
+                        <label for="password" class="col-md-3 col-form-label px-0">Mot de passe</label>
+                        <div class="col-md-9 px-0">
+                            <input type="password" class="form-control" name="userPassword" id="password" placeholder="Mot de passe" required />
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" name="inputLogin" class="btn btn-dark" value="Se connecter" />
+                    </div>
+                </form>
+            </div>
+            <!-- Formulaire Réinitialiser mot de passe -->
+            <div id="passwordForgot" class="tab-pane fade">
+                <h3 class="mb-5">Réinitialiser mon mot de passe</h3>
+                <form action="#" method="POST">
+                    <div class="row mx-0 mb-5">
+                        <label for="email" class="col-md-3 col-form-label px-0">Adresse e-mail</label>
+                        <div class="col-md-9 px-0">
+                            <input type="email" class="form-control" name="userEmail" id="email" placeholder="E-mail" required />
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" name="inputPasswordForgot" class="btn btn-dark" value="Réinitialiser" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section th:replace="composants/footer :: scripts"></section>
+
+</body>
+</html>

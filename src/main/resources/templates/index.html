@@ -1,0 +1,222 @@
+﻿<!doctype html>
+<html lang="en">
+  <head th:replace="composants/header :: head"></head>
+  
+  <body>
+
+    <!-- Navbar -->
+    <nav th:replace="composants/header :: navbar"></nav>
+
+     <!-- Section À la une -->
+     <section id="aLaUne" class="container-fluid py-5">
+        <h2 class="text-center mb-5">À la Une</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="bg-dark" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex flex-row">
+                        <img th:src="@{/img/hungergames1.jpg}" class="d-block img-fluid p-3" alt="Image carousel" />
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-3">Hunger Games - Tome 1 : Hunger Games</h3>
+                            <p class="">Dans un futur sombre, sur les ruines des États-Unis, un jeu télévisé est créé pour contrôler le peuple par la terreur.<br /> Douze garçons et douze filles tirés au sort participent à cette sinistre téléréalité, que tout le
+                                monde est forcé de regarder en direct. Une seule règle dans l'arène : survivre, à tout prix.<br /> Quand sa petite sœur est appelée pour participer aux Hunger Games, Katniss n'hésite pas une seconde. Elle prend sa place,
+                                consciente du danger. À seize ans, Katniss a déjà été confrontée plusieurs fois à la mort. Chez elle, survivre est comme une seconde nature...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-row">
+                        <img th:src="@{/img/hungergames2.jpg}" class="d-block img-fluid p-3" alt="Image carousel" />
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-3">Hunger Games - Tome 2 : L'embrasement</h3>
+                            <p class="">À la fois symbole de la rébellion et marionnette d'une dictature sanglante, Katniss a le pouvoir entre ses mains liées.<br /> Après le succès des derniers Hunger Games, le peuple de Panem est impatient de retrouver Katniss
+                                et Peeta pour la Tournée de la victoire. Mais pour Katniss, il s'agit surtout d'une tournée de la dernière chance.<br /> Celle qui a osé défier le Capitole est devenue le symbole d'une rébellion qui pourrait bien embraser
+                                Panem. Si elle échoue à ramener le calme dans les districts, le président Snow n'hésitera pas à noyer dans le sang le feu de la révolte.<br /> À l'aube des Jeux de l'Expiation, le piège du Capitole se referme sur Katniss...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-row">
+                        <img th:src="@{/img/hungergames3.jpg}" class="d-block img-fluid p-3" alt="Image carousel" />
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-3">Hunger Games - Tome 3 : La révolte</h3>
+                            <p class="">Je m'appelle Katniss Everdeen. Je devrais être morte. Maintenant je vais mener la révolte.<br /><br /> Contre toute attente, Katniss a survécu une seconde fois aux Hunger Games. Mais le Capitole crie vengeance. Katniss doit
+                                payer les humiliations qu'elle lui a fait subir. Et le président Snow a été très clair : Katniss n'est pas la seule à risquer sa vie. Sa famille, ses amis et tous les anciens habitants du district Douze sont visés par la
+                                colère sanglante du pouvoir.<br /> Pour sauver les siens, Katniss doit redevenir le geai moqueur, le symbole de la rébellion. Quel que soit le prix à payer.<br /><br /> "Suzanne Collins réussit un tour de force rare : écrire
+                                une suite encore meilleure que le premier tome."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-row">
+                        <img th:src="@{/img/hungergames4.jpg}" class="d-block img-fluid p-3" alt="Image carousel" />
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-3">Hunger Games - La ballade du serpent et de l'oiseau chanteur</h3>
+                            <p class="">Dévoré d'ambition, Poussé par la compétition, Il va découvrir que la soif de pouvoir a un prix !<br /> C'est le matin de la Moisson qui doit ouvrir la dixième édition annuelle des Hunger Games. Au Capitole, Coriolanus Snow,
+                                dix-huit ans, se prépare à devenir pour la première fois mentor aux Jeux. L'avenir de la maison Snow, qui a connu des jours meilleurs, est désormais suspendu aux maigres chances de Coriolanus. Il devra faire preuve de charme,
+                                d'astuce et d'inventivité pour faire gagner sa candidate.<br /> Mais le sort s'acharne. Honte suprême, on lui a confié le plus misérable des tributs : une fille du district Douze. Leurs destins sont désormais liés. Chaque
+                                décision peut les conduire à la réussite ou à l'échec, au triomphe ou à la ruine. Dans l'arène, ce sera un combat à mort.<br /> Pour assouvir son ambition, Coriolanus parviendra-t-il à réprimer l'affection grandissante
+                                qu'il ressent pour sa candidate, condamnée d'avance ?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" />
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" />
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Livres -->
+    <section id="livres" class="container py-5">
+        <h2 class="text-center mb-5">Livres</h2>
+
+        <div id="myBtnContainer" class="d-flex justify-content-center mb-5">
+            <button class="btn active mx-2" onclick="filterSelection('all')">Tous les livres</button>
+            <button class="btn mx-2" onclick="filterSelection('combat')">Combat</button>
+            <button class="btn mx-2" onclick="filterSelection('comedie')">Comédie</button>
+            <button class="btn mx-2" onclick="filterSelection('fantastique')">Fantastique</button>
+            <button class="btn mx-2" onclick="filterSelection('romance')">Romance</button>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3 livre fantastique mb-3 pt-3">
+                <img th:src="@{/img/kaiju8.jpg}" class="card-img-top d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">Kaiju n°8 - Tome 1</h5>
+                    <h6> Naoya Matsumoto</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre combat mb-3 pt-3">
+                <img th:src="@{/img/kenganashura.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">Kengan Ashura - Tome 1</h5>
+                    <h6>Sandrovich Yabako</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre romance mb-3 pt-3">
+                <img th:src="@{/img/shikimori.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">Shikimori n'est pas juste mignonne - Tome 1</h5>
+                    <h6>Keigo Maki</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre fantastique mb-3 pt-3">
+                <img th:src="@{/img/eldersister.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">My Elder Sister - Tome 1</h5>
+                    <h6>Iida Pochi</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre comedie mb-3 pt-3">
+                <img th:src="@{/img/missionyozakura.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">Mission: Yozakura family - Tome 1</h5>
+                    <h6>Hitsuji Gondaira</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre comedie mb-3 pt-3">
+                <img th:src="@{/img/spyfamily.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">Spy x Family - Tome 1</h5>
+                    <h6>Tatsuya Endo</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre fantastique mb-3 pt-3">
+                <img th:src="@{/img/attaquetitan.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">L'Attaque des Titans - Tome 34</h5>
+                    <h6>Hajime Isayama</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre fantastique mb-3 pt-3">
+                <img th:src="@{/img/demonslayer.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">Demon Slayer - Tome 19</h5>
+                    <h6>Koyoharu Gotouge</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre combat mb-3 pt-3">
+                <img th:src="@{/img/valkyrieapocalypse.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">Valkyrie Apocalypse - Tome 8</h5>
+                    <h6>Takumi Fukui</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre combat mb-3 pt-3">
+                <img th:src="@{/img/tokyorevengers.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">Tokyo Revengers - Tome 13</h5>
+                    <h6>Ken Wakui</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre combat mb-3 pt-3">
+                <img th:src="@{/img/dragonball.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">Dragon Ball - Tome 1</h5>
+                    <h6>Akira Toriyama</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 livre combat mb-3 pt-3">
+                <img th:src="@{/img/onepunchman.jpg}" class="card-img-top  d-block mx-auto" alt="Image du livre" />
+                <div class="card-body">
+                    <h5 class="card-title">One-Punch Man - Tome 23</h5>
+                    <h6>One</h6>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-dark mt-2">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section th:replace="composants/footer :: scripts"></section>
+  </body>
+</html>
